@@ -1,0 +1,9 @@
+S1 :
+Software Analysis and Design
+Software Life Cycle
+Scrum : Principles and Concepts
+Install Git
+SMTP, SSL
+Python script to send email
+Python script to send email and attach a word document file
+Send your github id ( dont forget )
