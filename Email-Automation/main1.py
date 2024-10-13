@@ -3,8 +3,8 @@ from credentials import password
 
 port = 465  # For SSL
 smtp_server = "smtp.gmail.com"
-sender_email = "YOUR EMAIL"  # Enter your address
-receiver_email = "RECEIVER EMAIL"  # Enter receiver address
+sender_email = "awrash.sn@gmail.com"  # Enter your address
+receiver_email = "arash.sn.work@gmail.com"  # Enter receiver address
 
 message = """
 Subject: Hi there

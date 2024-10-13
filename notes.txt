@@ -7,3 +7,8 @@ SMTP, SSL
 Python script to send email
 Python script to send email and attach a word document file
 Send your github id ( dont forget )
+
+
+S2:
+Send verification code using email with python
+How to send get request with python
