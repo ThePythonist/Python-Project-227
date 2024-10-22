@@ -12,3 +12,9 @@ Send your github id ( dont forget )
 S2:
 Send verification code using email with python
 How to send get request with python
+
+
+S3:
+HTTP status codes
+Web scraping
+Fetch temp,humidity,city name from openweather
