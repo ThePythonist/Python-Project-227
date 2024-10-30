@@ -17,4 +17,9 @@ How to send get request with python
 S3:
 HTTP status codes
 Web scraping
-Fetch temp,humidity,city name from openweather
+Fetch city name, temp, humidity, date from openweather
+
+
+S4 :
+A normalizer function for converting timestamp to datetime and Kelvin to Celsius
+Create a database : Each city must have its own table
