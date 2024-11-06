@@ -23,3 +23,7 @@ Fetch city name, temp, humidity, date from openweather
 S4 :
 A normalizer function for converting timestamp to datetime and Kelvin to Celsius
 Create a database : Each city must have its own table
+
+S5 :
+How to web scrape using beautifulsoup4
+What is selenium and how to use it
