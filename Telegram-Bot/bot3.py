@@ -2,7 +2,7 @@ from flask import Flask, request
 import telepot
 import urllib3
 from mytoken import mytoken
-from mtranslate import translate
+from weather import get_weather_data
 
 proxy_url = "http://proxy.server:3128"
 telepot.api._pools = {
@@ -25,13 +25,19 @@ def handle(msg):
     if content_type == 'text':  # text bashe
         if msg['text'] == '/start':
             # Create a reply keyboard with three buttons
-            keyboard = [['Button 1', 'Button 2', 'Button 3'], ["Button 4", "Button 5", "Button 6"]]
+            keyboard = [['Tehran', 'Tabriz', 'Rasht'], ["Paris", "Amsterdam", "Berlin"]]
             reply_markup = {'keyboard': keyboard, 'one_time_keyboard': True}
 
             # Send the message with the reply keyboard
-            bot.sendMessage(chat_id, 'Choose an option:', reply_markup=reply_markup)
+            bot.sendMessage(chat_id, 'Choose a city:', reply_markup=reply_markup)
         else:
-            reply = translate(msg['text'], "fa", "en")  # tarjome har matn daryafti be farsi az englisi
+            data = get_weather_data(city=msg['text'], key="ce28524cced047e5c594dabe55a408be")
+            reply = f"""
+City : {data['name']}
+Date : {data['dt']}
+Temperature : {data['temp']}
+Humidity : {data['humidity']}
+"""
             bot.sendMessage(chat_id, reply)
 
     else:  # text nabashe

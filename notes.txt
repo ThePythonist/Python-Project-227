@@ -31,3 +31,7 @@ What is selenium and how to use it
 S6 :
 Fetch crypto prices from bitpin.ir using selenium
 What is git ?
+
+S9 :
+Weather bot
+Price bot
