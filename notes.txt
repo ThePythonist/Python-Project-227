@@ -40,3 +40,7 @@ S10 :
 Price bot & use git
 Id bot va link repo github
 Search : Django & MVT
+
+S11 :
+create a url & view : 
+نمایش حقوق دریافت شده هر کارمند در یک سال و کل حقوق پرداخت شده توسط شرکت از فایل payment.json
